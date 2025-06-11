@@ -1,14 +1,14 @@
-// Initialize cart from localStorage or empty array
+
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-// Add product to cart
+
 function addToCart(name, price) {
   cart.push({ name, price });
   localStorage.setItem('cart', JSON.stringify(cart));
   alert(`${name} has been added to your cart!`);
 }
 
-// Load cart items on cart.html
+
 function loadCart() {
   const cartContainer = document.getElementById("cart-items");
   const totalElement = document.getElementById("total");
@@ -34,8 +34,6 @@ function loadCart() {
 
   totalElement.innerText = total;
 }
-
-// Remove item from cart
 function removeFromCart(index) {
   cart.splice(index, 1);
   localStorage.setItem('cart', JSON.stringify(cart));
