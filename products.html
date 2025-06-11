@@ -1,0 +1,139 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products - ShopEase</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f0f0f0;
+    }
+    header {
+      background: linear-gradient(to right, #673ab7, #512da8);
+      color: white;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffc107;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 3rem;
+      gap: 20px;
+    }
+
+    .product-card {
+      background: white;
+      width: 220px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+
+    .product-card button {
+      background: #ffc107;
+      border: none;
+      color: #333;
+      padding: 10px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .product-card button:hover {
+      background: #ffca28;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our Products</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main class="product-grid">
+    <!-- Product 1 -->
+    <div class="product-card">
+      <img src="assests/product1..jpg" alt="Smart Watch" />
+      <h3>Smart Watch</h3>
+      <p>₹1,999</p>
+      <button onclick="addToCart('Smart Watch', 1999)">Add to Cart</button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="assests/product2.jpeg" alt="Bluetooth Speaker" />
+      <h3>Bluetooth Speaker</h3>
+      <p>₹2,499</p>
+      <button onclick="addToCart('Bluetooth Speaker', 2499)">Add to Cart</button>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="assests/product3.jpg" alt="Wireless Earbuds" />
+      <h3>Wireless Earbuds</h3>
+      <p>₹1,299</p>
+      <button onclick="addToCart('Wireless Earbuds', 1299)">Add to Cart</button>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+      <img src="assests/product4.jpg" alt="Gaming Mouse" />
+      <h3>Gaming Mouse</h3>
+      <p>₹799</p>
+      <button onclick="addToCart('Gaming Mouse', 799)">Add to Cart</button>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product-card">
+      <img src="assests/product5.jpg" alt="Laptop Stand" />
+      <h3>Adjustable Laptop Stand</h3>
+      <p>₹1,099</p>
+      <button onclick="addToCart('Laptop Stand', 1099)">Add to Cart</button>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product-card">
+      <img src="assests/product6.jpeg" alt="Phone Tripod" />
+      <h3>Mobile Tripod</h3>
+      <p>₹499</p>
+      <button onclick="addToCart('Phone Tripod', 499)">Add to Cart</button>
+    </div>
+  </main>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
